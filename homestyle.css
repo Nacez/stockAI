@@ -1,0 +1,132 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.first_section {
+    background-image: url("https://images.pexels.com/photos/3774243/pexels-photo-3774243.jpeg?cs=srgb&dl=pexels-souvenirpixels-3774243.jpg&fm=jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+nav.navbar {
+    background-color: #f8f9fa !important;
+}
+
+.home_box {
+    max-width: 30%;
+    margin: 10% auto 0;
+}
+
+.home_box button {
+    max-width: 60%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second_section {
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative; /* So the background does not get affected by the negative margin */
+}
+
+.second_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://img.freepik.com/premium-vector/modern-simple-minimal-white-abstract-modern-background-design_249611-5955.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; /* Makes sure it stays behind the content */
+}
+
+#card_hang {
+    position: relative;
+    z-index: 1; /* Keeps this content above the background image */
+    margin-top: -100px; /* Moves the card up */
+}
+
+.blockquote {
+    margin-top: 50px;
+}
+.footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    font-size: 16px;
+    color: #333;
+}
+
+.footer-right .footer-sitemap {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    
+}
+
+.footer-right .footer-sitemap li {
+    display: block;
+    margin-left: 20px;
+}
+
+.footer-right .footer-sitemap a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+}
+
+.footer-right .footer-sitemap a:hover {
+    text-decoration: underline;
+}
+
+.inner_section_right {
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
+    margin-top: 25px;
+}
+
+.inner_section_left {
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
+    flex-direction: row-reverse; /* Moves the image to the right side */
+    margin-top: 25px;
+}
+
+.text_inside {
+    padding: 25px;
+    width: 50%;
+}
+
+.img_inside {
+    padding: 25px;
+    display: flex;         /* Optional: to make sure the image is treated like a block-level element */
+    justify-content: center; /* Optional: centers the image horizontally */
+}
+
+.img_inside img {
+    width: 80%;
+    max-width: 100%;        /* Ensures image doesn't stretch beyond its container */
+}
+
